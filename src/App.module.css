@@ -8,3 +8,15 @@
   gap: 2rem;
   align-items: flex-start;
 }
+
+@media (max-width: 768px) {
+  html {
+    /* 14px * 100 / 16 = 87.5% */
+    font-size: 87.5%;
+  }
+
+  .wrapper {
+    /* O grid irá ter apenas uma coluna que ocupa 100% da largura da tela */
+    grid-template-columns: 1fr;
+  }
+}
