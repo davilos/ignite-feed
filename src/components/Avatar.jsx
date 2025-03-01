@@ -1,5 +1,11 @@
+/* eslint-disable react/prop-types */
 import styles from "./Avatar.module.css";
 
-export function Avatar(props) {
-  return <img className={styles.avatar} src={props.src} />;
+export function Avatar({ hasBorder = true, src }) {
+  return (
+    <img
+      className={hasBorder ? styles.avatarWithBorder : styles.avatar}
+      src={src}
+    />
+  );
 }
